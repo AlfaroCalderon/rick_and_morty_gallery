@@ -44,6 +44,11 @@ export function gallery() {
     div.id = 'card-container'
     document.querySelector('#main-container').appendChild(div);
 
+    //pagination container 
+    let paginationContainer = document.createElement('div');
+    paginationContainer.className = 'pagination-container'; 
+    paginationContainer.id = 'pagination-container';
+    document.querySelector('#main-container').appendChild(paginationContainer);
 
     // Add an event listener to the form to handle the search functionality
     document.getElementById("character-form").addEventListener('submit', (e) => {
@@ -59,6 +64,7 @@ export function gallery() {
 
         // Call the characters function with the filter values
         characters({ name, status, gender })
+       
 
     })
 }

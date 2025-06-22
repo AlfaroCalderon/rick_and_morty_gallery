@@ -169,6 +169,27 @@ body {
     );
 }
 
+
+.pagination-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1rem auto;
+    width: 50vw;
+    gap: 20px;
+    padding: 1rem;
+}
+
+.pagination-button{
+    display: inline-block;
+    width: 40px;
+    padding: 10px 0;
+    background-color: #A8FF94;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 /*Alert style -----------------------------------------------------------------------------------------*/
 
 
