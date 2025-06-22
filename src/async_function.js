@@ -14,7 +14,7 @@ export async function characters(params) {
         //here we obtain the data from the API
         let response = await axios.get(`https://rickandmortyapi.com/api/character/?name=${params.name}&status=${params.status}&gender=${params.gender}&page=${page}`);
         let totalPages = response.data.info.pages; //We get the number of pages to be able to filter the characters
-        let data = response.data.results;
+        let data = response.data.results; // We get the data from the response
 
         //Width the data that we've gotten, we procced to create the card
         data.map(character => {
@@ -23,7 +23,7 @@ export async function characters(params) {
             card.innerHTML = `
             <img src="${character.image}" alt="${character.name}">
             <h2>${character.name}</h2>
-            <p>Status: <span class="dot"  data-status="${character.status}"></span> ${character.status}</p>
+            <p>Status: <span class="dot-${character.status}"></span> ${character.status}</p>
             <p>gender: ${character.gender}</p>
             <p>Species: ${character.species}</p>
             <p>Location: ${character.location.name}</p>`;

@@ -128,7 +128,7 @@ body {
     margin-left: 5px;
 }
 
-/*
+
 .dot-Alive{
     width: 8px;
     height: 8px;
@@ -158,8 +158,7 @@ body {
     margin-left: 5px;
 }
 
-*/
-
+/*
 .dot{
     --status: attr(data-status type(<custom-ident>));
     background-color: if(
@@ -167,7 +166,7 @@ body {
         style(--status: Dead):red;
         style(--status: unknown ):gray;
     );
-}
+}*/
 
 
 .pagination-container{
